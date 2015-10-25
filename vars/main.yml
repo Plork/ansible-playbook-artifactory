@@ -6,5 +6,5 @@ nginx_vhosts:
    root: "/var/www/{{server_name}}"
 
 nginx_upstreams:
- - name: {{server_name}}
+ - name: artifactory
    servers: { "localhost:8081 fail_timeout=0" }
